@@ -1,0 +1,256 @@
+
+/* general styling */
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* body contiainer styling */
+.container{
+  background-color:beige ;
+  height: 100vh; width: 100vw;
+  
+}
+/* header content styling */
+header{
+  height: 10%; width: 100%;
+  position:fixed;
+  border-bottom: 2px solid rgb(206, 204, 204);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: beige;
+}
+
+header .center{
+  width: 50%; height: 70%;
+  background-color: rgb(182, 175, 175);
+  text-align: center;
+  border-radius: 6px;
+}
+header .left{
+  min-width: 15%;
+}
+header .right{
+  display: flex;
+  max-width: 45%;
+  align-items: center;
+  padding: 0;
+  margin-right: 2%;
+}
+
+header .right .btn{
+  margin-left: 20px;
+}
+header .right .btn:nth-child(1){
+  background:linear-gradient(0deg,rgb(20, 156, 111), aquamarine);
+  padding: 4px 20px;
+  border-radius: 12px;
+  color: beige;
+}
+header .right .btn:nth-child(2){
+  background-color: greenyellow;
+}
+header .right .btn:nth-child(3){
+  background-color: grey;
+  height: 40px; width: 40px;
+  border-radius: 50%;
+}
+
+/* center content styling */
+.center-content{
+  display: grid;
+  grid-template-columns: .3fr 1fr .5fr;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+/* Navigation styling */
+navigation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-right: 1px solid rgb(220, 217, 217);
+  padding-top: 40%;
+  padding-bottom: 20%;
+  max-height: 100%;
+  text-align: center;
+}
+navigation .nav{
+  width: 100%; 
+  padding: 10px;
+  transition: all .3s;
+}
+navigation .nav:nth-child(4){
+  color: red;
+}
+navigation .nav:last-child{
+  background-color: rgb(8, 83, 58);
+  width: 80%; height: 7%;
+  border-radius: 12px;
+  color: beige;
+}
+navigation .nav:hover{
+  background-color: aquamarine;
+  cursor: pointer;
+}
+/* content styling */
+content{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+  overflow-y: scroll;
+}
+content::-webkit-scrollbar{
+  display: none;
+}
+content{
+  -ms-overflow-style:none;
+}
+.engage{
+  display: grid;
+  height: 30%;
+  margin-bottom: 20px;
+}
+.action{
+  box-shadow: inset 1px 1px 5px rgb(122, 120, 120);
+  height: 30px;
+  border-radius: 7px;
+  padding: 10px;
+}
+.action ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.action ul li{
+  font-weight: bold;
+}.input-container{
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+  box-shadow:  2px 1px 3px rgb(122, 120, 120);
+  border-radius: 7px;
+}
+.input-container .profile{
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 4px auto;
+}
+.input-container .input{
+  padding-top: 12px;
+}
+.input-container .input input{
+  background-color: beige;
+}
+.input ul{
+  display: flex;
+  justify-content: space-around;
+  max-width: 40%;
+}
+.post-btn{
+  background-color: aquamarine;
+  height: 25px; width: 50px;
+  margin: auto;
+  border-radius: 18px;
+  color: beige;
+}
+
+/* posts styling */
+.engagements{
+  margin-top: 0;
+  height: 50%;
+}
+.engagement-container{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.engagement-container .engagement-owner{
+  width: 40px; height: 40px;
+  background-color: grey;
+  border-radius: 50%;
+}
+.engagement-data{
+  max-width: 80%;
+  padding-left: 20px;
+}
+.engagement-data .details{
+  padding-bottom: 12px;
+}
+
+.info .image-container{
+  background-color: rgb(164, 162, 162);
+  min-height: 180px; min-width: 100%;
+  border-radius: 12px;
+  margin-top: 15px;
+  text-align: center;
+}
+/* right nav styling */
+nav::-webkit-scrollbar{
+  display: none;
+}
+nav{
+  -ms-overflow-style:none;
+}
+nav{
+  overflow-y: scroll;
+  padding-top: 100px;
+  padding-right: 20px;
+}
+nav .individuals{
+  border: 1px solid rgb(203, 198, 198);
+  height: 60%;
+  border-radius: 12px;
+}
+
+nav .individuals .header{
+padding: 20px;
+box-shadow: 0px 5px 10px grey;
+}
+
+nav .participants{
+padding:10px 28px ;
+display: flex;
+flex-wrap: wrap;
+}
+nav .participants .participant{
+text-align: center;
+padding: 10px;
+}
+nav .participants .profile-pic{
+  width: 50px; height: 50px;
+  background-color: grey;
+  border-radius: 50%;
+}
+nav .participants .profile-data{
+ overflow-x: hidden;
+}
+/* Trends styling */
+.trending{
+margin-top: 20px;
+border: 1px solid grey;
+border-radius: 12px;
+height:fit-content;
+}
+
+.trending .header{
+  padding: 16px ;
+  box-shadow: 0px 5px 10px rgb(203, 201, 201);
+}
+
+.trending .trends{
+margin: 13px; padding: 6px 12px;
+}
+.trending .trend{
+margin: 13px; padding: 2px 0px;
+}
+
