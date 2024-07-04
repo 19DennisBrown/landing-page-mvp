@@ -234,6 +234,10 @@ nav .participants .profile-pic{
 nav .participants .profile-data{
  overflow-x: hidden;
 }
+/* /// */
+.trending, .individuals{
+  overflow-y: scroll;
+}
 /* Trends styling */
 .trending{
 margin-top: 20px;
@@ -254,3 +258,30 @@ margin: 13px; padding: 6px 12px;
 margin: 13px; padding: 2px 0px;
 }
 
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width:769px) {
+  navigation, nav{
+    display: none;
+  }
+  .center-content{
+    grid-template-columns: 1fr;
+  }
+  
+  header .left, header .right .btn:nth-child(2){
+    display: none;
+  }
+  header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
+  }
+  header .right .btn:nth-child(3){
+    min-width: 30px; min-height: 30px;
+    border-radius: 50%;
+  }
+  .action{
+    overflow-x: scroll;
+  }.action_links{
+    padding-left: 4px;
+  }
+}
